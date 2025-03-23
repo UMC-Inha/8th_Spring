@@ -31,7 +31,7 @@ OFFSET ?; --(N-1)*7
 INSERT INTO 
     review(store_id, member_id, message, star_rating)
 VALUES
-    ([회원_ID], [상점_ID], [리뷰 작성 내용], [별점]);
+    ([상점_ID], [회원_ID], [리뷰 작성 내용], [별점]);
 ```
 
 <br>
