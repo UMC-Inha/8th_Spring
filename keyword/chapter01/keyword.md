@@ -16,8 +16,8 @@
 **외래키**는 한 테이블의 필드로 `PRIMARY KEY`가 다른 테이블의 필드를 참조한다.
 - 예시
 
-![img.png](img.png)
-![img_1.png](img_1.png)
+![img.png](img/img.png)
+![img_1.png](img/img_1.png)
 
 위 예시를 통해 다음과 같은 사실을 알 수 있다.
 - `Orders` 테이블의 `PersonID` 열이 `Persons` 테이블의 `PersonID` 열을 가리킨다.
@@ -139,7 +139,7 @@ https://learn.microsoft.com/en-us/sql/relational-databases/tables/primary-and-fo
 
 ### 개념적 설계
 
-![img_2.png](img_2.png)
+![img_2.png](img/img_2.png)
 
 사용자의 요구 사항을 분석하여 관리해야 할 주요 개체(Entity)와 그들 간의 관계(Relationship)를 정의한다.
 
@@ -152,7 +152,7 @@ https://learn.microsoft.com/en-us/sql/relational-databases/tables/primary-and-fo
 - ER 다이어그램 작성
 
 ### 논리적 설계
-![img_3.png](img_3.png)
+![img_3.png](img/img_3.png)
 
 개념적 설계를 기반으로 데이터베이스의 논리적 구조를 정의한다.
 
@@ -165,7 +165,7 @@ https://learn.microsoft.com/en-us/sql/relational-databases/tables/primary-and-fo
 - 무결성 제약 조건 정의
 
 ### 물리적 설계
-![img_4.png](img_4.png)
+![img_4.png](img/img_4.png)
 
 논리적 설계를 기반으로 데이터베이스의 실제 저장 구조와 접근 방식을 결정
 - 인덱스 설계
@@ -261,8 +261,8 @@ https://learn.microsoft.com/ko-kr/ef/core/modeling/relationships/many-to-many
 ---
 정규화는 데이터베이스 설계에서 데이터베이스의 효율성, 일관성 및 정확성을 개선하는 작업이다.
 
-![img_5.png](img_5.png)
-![img_6.png](img_6.png)
+![img_5.png](img/img_5.png)
+![img_6.png](img/img_6.png)
 
 ### 정규화의 필요성
 정규화를 하지 않으면 데이터 중복이 발생하여 데이터 무결성을 위협하고
@@ -327,7 +327,7 @@ https://www.geeksforgeeks.org/normal-forms-in-dbms/
 
 예를 들어 다음과 같은 정규화된 테이블이 존재한다고 했을 때
 
-![img_8.png](img_8.png)
+![img_8.png](img/img_8.png)
 
 조회시 정규화로 인해 쿼리가 복잡해지고 느려질 수 있는데, 필요한 정보를 얻기 위해 여러 테이블을 조인해야 하기 때문이다.
 

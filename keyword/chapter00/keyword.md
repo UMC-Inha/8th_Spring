@@ -20,7 +20,7 @@ IP 주소는 통신을 위해 인터넷 프로토콜을 사용하는 컴퓨터 �
 IP 주소는 구조, 목적 사용되는 네트워크 유형에 따라 여러 가지 방법으로 분류된다.
 
 **1. 주소 지정 방식 기반 (IPv4, IPv6)**
-![img.png](img.png)
+![img.png](img/img.png)
 - **IPv4**
   - 가장 일반적인 IP 주소 형태
   - 예를 들어, 192.158.1.38 에서 각 숫자 세트는 0~255까지 범위가 될 수 있다.
@@ -168,7 +168,7 @@ https://inpa.tistory.com/entry/WEB-%F0%9F%8C%90-CIDR-%EC%9D%B4-%EB%AC%B4%EC%96%B
 TCP, UDP는 모두 전송 계층 프로토콜의 프로토콜이다.
 TCP는 연결 지향 프로토콜인 반면 UDP는 UDP/IP 제품군이라고 하는 인터넷 프로토콜 제품군의 일부이다.
 
-![img_1.png](img_1.png)
+![img_1.png](img/img_1.png)
 
 TCP는 인터세 프로토콜 모음의 주요 프로토콜 중 하나이다.
 네트워크를 통해 서로 다른 장치 간 메시지 교환을 돕는 통신을 위한 연결 지향 프로토콜이다.
@@ -185,7 +185,7 @@ TCP는 인터세 프로토콜 모음의 주요 프로토콜 중 하나이다.
   - 운영체제에 따라 달라지지 않는다.
   - 다양한 라우팅 프로토콜을 허용
 
-![img_2.png](img_2.png)
+![img_2.png](img/img_2.png)
 
 UDP는 전송 계층 프로토콜이다.
 UDP/IP 제품군이라고 하는 인터넷 프로토콜 제품군의 일부
@@ -200,8 +200,8 @@ TCP, UDP의 가장 큰 차이점은 **TCP**는 연결 기반이라 데이터가 
 **UDP**는 연결성이 없기에 신뢰성은 떨어지지만 더 빠르고 더 간단하다. 따라서, 속도가 중요한 상황에서 자주 사용된다.
 
 
-![img_4.png](img_4.png)
-![img_5.png](img_5.png)
+![img_4.png](img/img_4.png)
+![img_5.png](img/img_5.png)
 
 참고 자료:
 
@@ -216,7 +216,7 @@ https://www.geeksforgeeks.org/differences-between-tcp-and-udp/
 - 멀티 스레딩이 지원된다.
 - Apache HTTP Server, Nginx가 있다.
 
-![img_8.png](img_8.png)
+![img_8.png](img/img_8.png)
 
 **애플리케이션 서버**도 HTTP와 같은 다양한 프로토콜을 사용하여 클라이언트 애플리케이션에<br>
 **비즈니스 로직**에 대한 액세스를 제공 웹 서버는 웹 브라우저에서 HTTP 응답만 처리하는 반면,<br>
@@ -228,7 +228,7 @@ https://www.geeksforgeeks.org/differences-between-tcp-and-udp/
 - 멀티 스레딩이 지원되지 않는다. 
 - JBoss, Glassfish가 있다. 
 
-![img_9.png](img_9.png)
+![img_9.png](img/img_9.png)
 
 ### 애플리케이션 서버와 웹 서버가 함께 작동할 수 있나?
 **다중 서버 환경**을 사용하여 정적 및 동적 콘텐츠를 모두 생성하는 웹사이트를 만들 수 있다.<br>
