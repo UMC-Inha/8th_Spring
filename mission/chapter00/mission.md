@@ -33,5 +33,5 @@
 
 
 ### ✅ 깃허브 clone 받아서 실행하고 나온 페이지 스크린 샷 찍기
-![img.png](img.png)
-![img_1.png](img_1.png)
+![img.png](img/img.png)
+![img_1.png](img/img_1.png)

@@ -19,7 +19,7 @@
 
 ### 미션 사진, ERD Diagram
 
-![img_1.png](img_1.png)
+![img_1.png](img/img_1.png)
 
 
 ## ✅ 실습 인증
@@ -29,19 +29,19 @@
 
 ### 1. **homebrew**를 이용해 mysql 설치
 
-![img_3.png](img_3.png)
+![img_3.png](img/img_3.png)
 
 ### 2. `mysql.server start` 커맨드를 통해 mysql 서버 실행
 
 다음과 같이 뜨면 성공
 
-![img_4.png](img_4.png)
+![img_4.png](img/img_4.png)
 
 ### 3. `mysql_secure_installation` 커맨드를 통해 mysql 기본 세팅
 
 다음과 같은 창이 뜨면
 
-![img_5.png](img_5.png)
+![img_5.png](img/img_5.png)
 
 아래 토글 안에 정리된 내용에 따라 입맛에 맞게 설정
 <details>
@@ -127,33 +127,33 @@
 `mysql -u root -p`를 통해 접속<br>
 이렇게 뜨면 성공이다.
 
-![img_6.png](img_6.png)
+![img_6.png](img/img_6.png)
 
 ### 5. DB 접속
 **DBeaver**를 통해 접속했다.
 <br>
 <br>
 
-![img_7.png](img_7.png)
+![img_7.png](img/img_7.png)
 
 이렇게 생긴 아이콘 클릭 후
 
-![img_8.png](img_8.png)
+![img_8.png](img/img_8.png)
 
 해당 화면에서 `MySQL` 클릭
 
 그러면 다음과 같은 창이 뜰 것이다.
 
-![img_9.png](img_9.png)
+![img_9.png](img/img_9.png)
 
 여기서 Database는 현재 만들어둔 게 없기 때문에 user/password 부분, port 부분만 신경쓰고<br>
 나머지는 기본 설정 그대로 유지한 채로 연결
 
-![img_10.png](img_10.png)
+![img_10.png](img/img_10.png)
 
 그러면 다음과 같이 연결된 초록색 체크 표시로 연결된 모습을 확인할 수 있다.
 
-![img_11.png](img_11.png)
+![img_11.png](img/img_11.png)
 
 
 
