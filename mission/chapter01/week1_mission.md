@@ -1,6 +1,9 @@
 # 일반 미션
-- ERD 설계
+- ERD 설계 (수정 전)
 ![image](https://github.com/user-attachments/assets/3cb8ddbf-5310-4d28-9c64-9449375de116)
+
+- ERD 설계 (수정 후)
+![image](https://github.com/user-attachments/assets/024ffe87-e351-49da-819d-621782eb10bc)
 
 
 # 시니어 미션
