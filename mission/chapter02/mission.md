@@ -26,7 +26,7 @@ OFFSET ?; -- (n-1)*5
 INSERT INTO 
     review(store_id, user_id, rate, review_content, datetime) 
 VALUES 
-    ('상점123','닉네임1234', 5.0, '음 너무 맛있어요');
+    ('000001','000002', 5.0, '음 너무 맛있어요');
 ```
 
 ### 홈 화면 쿼리 - 성공한 미션 수
