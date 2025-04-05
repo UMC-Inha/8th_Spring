@@ -70,20 +70,20 @@ INSERT INTO review (
 
 ```sql
 -- offset based paging 사용 --
-SELECT 
-    m.deadline,
+SELECT
+    datediff(m.end_date, NOW()) as deadline
     s.name,
     m.mission_body,
     m.reward
 FROM
     mission AS m
-    INNER JOIN member_mission AS mm ON m.id = mm.mission_id
+    LEFT JOIN member_mission AS mm ON m.id = mm.mission_id
     INNER JOIN store AS s ON m.store_id = s.id
     INNER JOIN region AS r ON s.region_id = r.id
 WHERE
     r.name = '안암동'
     AND mm.member_id = ?
-    AND mm.status = 'NOT STARTED'
+    AND mm.mission_id IS NULL
     AND m.deadline > NOW()
 ORDER BY
     deadline desc limit ? offset ?;
