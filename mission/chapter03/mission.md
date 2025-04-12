@@ -369,7 +369,7 @@ Content-Type: application/json
 
 ---
 `200 OK`: 미션 상태 `completed`로 변경<br>
-`401 Unauthorized`: 인증 토큰이 없거나 유효하지 않은 상태
+`401 Unauthorized`: 인증 토큰이 없거나 유효하지 않은 상태<br>
 `400 Bad Request` : 미션이 이미 완료된 상태
 
 ## 6. 회원 가입 하기(소셜 로그인 고려 X)
@@ -428,5 +428,5 @@ Content-Type: application/json
 
 ---
 `201 Created`: 회원 가입 성공 <br>
-`401 Unauthorized`: 인증 토큰이 없거나 유효하지 않은 상태
+`401 Unauthorized`: 인증 토큰이 없거나 유효하지 않은 상태<br>
 `400 Bad Request` : 이메일이 이미 존재하는 경우
