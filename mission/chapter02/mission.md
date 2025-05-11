@@ -1,4 +1,3 @@
-
 ###  1. 내가 진행중, 진행 완료한 미션 모아서 보는 쿼리 (페이징 포함)
 
 ```sql
@@ -8,10 +7,25 @@ SELECT
     s.store_name,
     um.status AS mission_status
 FROM user_mission um
-JOIN user u ON um.user_id = u.id 
 JOIN mission m ON um.mission_id = m.mission_id  
 JOIN store s ON m.store_id = s.id 
-WHERE um.status IN ('in_progress', 'completed')
+WHERE um.status = 'IN_PROGRESS' and 
+um.user_id = :userId
+ORDER BY um.updated_at DESC
+LIMIT 15 OFFSET 0;
+```
+
+```sql
+SELECT 
+    m.mission_content,
+    m.reward_point,
+    s.store_name,
+    um.status AS mission_status
+FROM user_mission um
+JOIN mission m ON um.mission_id = m.mission_id  
+JOIN store s ON m.store_id = s.id 
+WHERE um.status = 'DONE' and 
+um.user_id = :userId
 ORDER BY um.updated_at DESC
 LIMIT 15 OFFSET 0;
 ```
@@ -25,7 +39,7 @@ VALUES
 ```
 
 ### 3. 홈화면 쿼리
-### 3-1) 완료된 미션 수 
+### 3-1) 완료된 미션 수
 ```sql
 SELECT
 u.completed_mission
@@ -60,6 +74,7 @@ SELECT
 	u.name,
 	u.email,
 	u.is_phone_varified,
-	u.point
+	u.point,
+	COALESCE(u.phone_num,'미인증') as phone_num
 FROM user AS u;
 ```
