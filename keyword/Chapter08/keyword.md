@@ -1,0 +1,26 @@
+- java의 Exception 종류들
+    - Error
+        - OutOfMemoryError : 힙 메모리 고갈
+        - StackOverflowError : 재귀 무한 호출
+        - InternalError : JVM 내부 상태 오류
+        - UnknownError : 원인 미상 치명적 오류
+        - NoClassDefFoundError : 컴파일 땐 있던 클래스가 런타임에 없음
+        - AssertionError : assert실패
+    - Checked Exception (컴파일러가 반드시 예외처리 하라고 요구)
+        - IOException : 파일,네트워크 I/O 중 문제
+        - SQLException : JDBC 실행 오류
+        - ClassNotFoundException : 클래스 로딩 실패
+        - InterruptedException : 스레드가 wait()/sleep() 중 인터럽트
+        - 등등…..
+    - Unchecked Exception (런타임에만 체크, 처리는 개발자 선택)
+        - NullPointerException : null객체 접근
+        - IllegalArgumentException : 잘못된 메서드 인자
+        - IndexOutOfBoundsException : 배열/리스트 인덱스 초과
+        - NumberFormatException : 문자열 숫자 변환 실패
+        - IllegalStateException : 객체 상태가 메서드 호출과 맞지 않음
+        - 등등…..
+- @Valid
+    - 필드 안의 값들을 규칙대로 검사하라고 표시하는 어노테이션
+    - 컨트롤러·서비스 메서드 파라미터, DTO 필드, 컬렉션·배열 안의 원소까지 재귀적으로 검증함
+    - CheckedException처럼 컴파일 강제는 아니지만 런타임에 안전망을 제공해줌
+    - 매서드 매개변수, 필드·생성자·setter, 메서드 반환값에 붙일 수 있음
